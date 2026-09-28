@@ -144,16 +144,6 @@ minimize c(ρ) = ∫ t · u ds   subject to   (1/|Ω|) ∫ ρ dx = V*,   0 ≤ �
 
 where u solves the (linear or nonlinear) elasticity equations for the given density. In the linear case, compliance is self-adjoint, so sensitivities come directly from the strain energy density. In the nonlinear case, the same energy-based expression is used as an approximation.
 
----
-
-## Limitations and next steps
-
-- The nonlinear sensitivities use an energy-based approximation rather than a full adjoint solve. Deriving and implementing the full adjoint for the hyperelastic problem is the natural next step.
-- The nonlinear script currently runs without a filter.
-- Extending the nonlinear framework to 3D and to contact boundary conditions.
-
----
-
 ## Acknowledgements
 
 The MMA implementation in `mmaa_al.py` is adapted from K. Svanberg, *The method of moving asymptotes — a new method for structural optimization*, International Journal for Numerical Methods in Engineering, 24(2), 1987. The subproblem solver was replaced with IPOPT.
